@@ -1,0 +1,45 @@
+{
+  "name": "react-parcel-web-extension",
+  "version": "0.0.1",
+  "description": "Boilerplate code for building web extensions using parcel",
+  "author": "Soumik Sur",
+  "license": "ISC",
+  "scripts": {
+    "start": "parcel manifest.json --host localhost --target webext-dev",
+    "build": "parcel build manifest.json --target webext-prod"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.11.9",
+    "@mui/material": "^5.11.9",
+    "@mui/x-data-grid": "^5.17.23",
+    "add": "^2.0.6",
+    "moment": "^2.29.4",
+    "octokit": "^2.0.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@octokit/types": "^9.0.0",
+    "@parcel/config-webextension": "^2.8.3",
+    "@playwright/test": "^1.32.0",
+    "@types/chrome": "^0.0.213",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "buffer": "^5.5.0",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "targets": {
+    "webext-dev": {
+      "sourceMap": {
+        "inline": true,
+        "inlineSources": true
+      }
+    },
+    "webext-prod": {}
+  }
+}
